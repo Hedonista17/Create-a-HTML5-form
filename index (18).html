@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> HTML5 FORMULARIO </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="p-5 m-5">
+    <div class="card text-start">
+      <div class="card-header">
+        <h5 class="card-title"> Payment form example</h5>
+      </div>
+      <div class="p-2 m-1">
+        <div class="alert alert-danger text-start p-3" role="alert">
+          <h6> Some fields are missing</h6>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-6 position-relative text-start">
+            <label for="validationCard" class="form-label">
+              <h6>Card#</h6>
+            </label>
+            <input type="tel" class="form-control numbersOnly text-secondary fw-semibold" id="validationCard"
+              placeholder="XXXXXXXXXXXXXXXX" maxlength="16" pattern="[0-9]" required>
+            <div class="invalid-tooltip">
+              Please provide a correct card number.
+            </div>
+          </div>
+          <div class="col-md-3 position-relative text-start">
+            <label for="validationCVC" class="form-label">
+              <h6>CVC#</h6>
+            </label>
+            <input type="tel" class="form-control numbersOnly text-secondary fw-semibold" id="validationCVC"
+              placeholder="0000" maxlength="4" pattern="[0-9]" required>
+            <div class="invalid-tooltip">
+              Please provide a correct CVC.
+            </div>
+          </div>
+
+          <div class="col-md-3 position-relative text-start">
+
+            <label for="ValidationAmount" class="form-label">
+              <h6>Amount</h6>
+            </label>
+            <div>
+              <div class="input-group mb-3">
+                <span class="p-0 m-0"><i class="fa-solid fa-dollar-sign"></i></span>
+                <input type="tel" class="form-control numbersOnly text-secondary fw-semibold" id="ValidationAmount"
+                  value="" placeholder="Amount" maxlength="9" pattern="[0-9]" required>
+              </div>
+              <div class="invalid-tooltip">
+                Please provide a valid amount.
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 position-relative text-start">
+            <label for="validationfirstname" class="form-label">
+              <h6>First name</h6>
+            </label>
+            <input type="text" class="form-control" id="validationfirstname" value="" pattern="[A-Za-z]" maxlength="20"
+              required>
+            <div class="invalid-tooltip">
+              Please provide a First Name.
+            </div>
+          </div>
+          <div class=" col-md-6 position-relative text-start">
+            <label for="validationlastname" class="form-label">
+              <h6>Last name</h6>
+            </label>
+            <input type="text" class="form-control" id="validationlastname" value="" pattern="[A-Za-z]" maxlength="30"
+              required>
+          </div>
+          <div class="invalid-tooltip">
+            Please provide a valid Last Name.
+          </div>
+          <div class="col-md-6 position-relative text-start">
+            <label for="validationTooltip03" class="form-label">
+              <h6>City</h6>
+            </label>
+            <input type="text" class="form-control" id="validationTooltip03" pattern="[A-Za-z]" required>
+            <div class="invalid-tooltip">
+              Please provide a valid city.
+            </div>
+          </div>
+          <div class="col-md-3 position-relative text-start">
+            <label for="validationTooltip04" class="form-label">
+              <h6>State</h6>
+            </label>
+            <select class="form-select text-secondary fw-semibold" id="validationTooltip04" required>
+              <option> Pick a state</option>
+              <option> Narnia</option>
+              <option> Mordor</option>
+              <option> País de Nunca Jamás</option>
+              <option> Israel</option>
+            </select>
+            <div class="invalid-tooltip">
+              Please select a valid state.
+            </div>
+          </div>
+          <div class="col-md-3 position-relative text-start">
+            <label for="validationTooltip05" class="form-label">
+              <h6>Postal Code</h6>
+            </label>
+            <input type="tel" class="form-control numbersOnly" id="validationTooltip05" maxlength="6" pattern="[0-9]"
+              required>
+            <div class="invalid-tooltip">
+              Please provide a valid postal code.
+            </div>
+          </div>
+          <div class="col-md-6 text-start">
+            <h6>We accept:</h6>
+            <div class="mt-4">
+              <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+              <label class="btn btn-secondary" for="option1">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" style="width:10px;height:10px;" type="radio" name="inlineRadioOptions"
+                    id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1"><i
+                      class="fa-brands fa-cc-mastercard  fa-2x"></i></label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" style="width:10px;height:10px;" type="radio" name="inlineRadioOptions"
+                    id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-visa fa-2x"></i></label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" style="width:10px;height:10px;" type="radio" name="inlineRadioOptions"
+                    id="inlineRadio3" value="option3">
+                  <label class="form-check-label" for="inlineRadio1"><i
+                      class="fa-brands fa-cc-diners-club fa-2x"></i></label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" style="width:10px;height:10px;" type="radio" name="inlineRadioOptions"
+                    id="inlineRadio4" value="option4">
+                  <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-amex fa-2x"></i></label>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="col-6 mb-3 text-start">
+            <label for="validationTextarea" class="form-label">
+              <h6>Message</h6>
+            </label>
+            <textarea style="resize:none;height:100px;" id="areadetexto" class="form-control" id="validationTextarea"
+              maxlength="200" required></textarea>
+            <div class=" text-footer">
+              <p class="text-secondary fw-semibold" style="font: size 10px">Add any notes here.</p>
+            </div>
+          </div>
+
+        </form>
+
+        </form>
+
+      </div>
+      <div class=" card-footer text-muted">
+        <div class="col-1 offset-11">
+          <a href="#" class="btn btn-secondary">Cancel</a>
+          <a href="#" class="btn btn-primary">Send</a>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1a22c82f5e.js" crossorigin="anonymous"></script>
+  </div>
+</body>
+
+</html>
