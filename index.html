@@ -11,19 +11,19 @@
 
 </head>
 
-<body>
+<body>                   <!-- GLOBAL ES UNA CARTA, DENTRO EL RESTO DE LOS ELEMENTOS-->
   <div class="p-5 m-5">
     <div class="card text-start">
       <div class="card-header">
         <h5 class="card-title"> Payment form example</h5>
       </div>
-      <div class="p-2 m-1">
+      <div class="p-2 m-1">  <!-- ALERTA MESSAGE-->
         <div class="alert alert-danger text-start p-3" role="alert">
           <h6> Some fields are missing</h6>
         </div>
       </div>
 
-      <div class="card-body">
+      <div class="card-body">  <!-- BLOQUES ESTILO CARD- RELLENAR FORMULARIOS// + INVALID TOOLTIP-->
         <form class="row g-3 needs-validation" novalidate>
           <div class="col-md-6 position-relative text-start">
             <label for="validationCard" class="form-label">
@@ -52,7 +52,7 @@
               <h6>Amount</h6>
             </label>
             <div>
-              <div class="input-group mb-3">
+              <div class="input-group mb-3">  <!-- ESTE DIV ES PARA POSICIONAR EL AMOUNT +SIMBOLO DOLAR-->
                 <span class="p-0 m-0"><i class="fa-solid fa-dollar-sign"></i></span>
                 <input type="tel" class="form-control numbersOnly text-secondary fw-semibold" id="ValidationAmount"
                   value="" placeholder="Amount" maxlength="9" pattern="[0-9]" required>
@@ -118,7 +118,7 @@
               Please provide a valid postal code.
             </div>
           </div>
-          <div class="col-md-6 text-start">
+          <div class="col-md-6 text-start"> <!-- OTRO DIV TIPO CARD (1 CARD) PARA HACER LOS METODOS DE PAGO, DENTRO DE ELLO LAS OPCIONES RADIOBUTTON+ICONOS-->
             <h6>We accept:</h6>
             <div class="mt-4">
               <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
@@ -148,7 +148,7 @@
               </label>
             </div>
           </div>
-          <div class="col-6 mb-3 text-start">
+          <div class="col-6 mb-3 text-start"> <!-- AQUI EMPIEZA OTRO DIV PARA EL CUADRO DE TEXTO ETC ETC-->
             <label for="validationTextarea" class="form-label">
               <h6>Message</h6>
             </label>
@@ -164,8 +164,8 @@
         </form>
 
       </div>
-      <div class=" card-footer text-muted">
-        <div class="col-1 offset-11">
+      <div class=" card-footer text-muted"> <!-- LOS BOTONES DE ABAJO -->
+        <div class="col-1 offset-11">  <!-- ESTA VAINA SIRVE PARA MOVER Y POSICIONAR TAMBIEN POR LAS COLUMNAS -->
           <a href="#" class="btn btn-secondary">Cancel</a>
           <a href="#" class="btn btn-primary">Send</a>
         </div>
