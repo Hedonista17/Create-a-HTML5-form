@@ -31,8 +31,8 @@
             <label for="validationCard" class="form-label">
               <h6>Card#</h6>
             </label>
-            <input type="tel" class="form-control numbersOnly text-secondary fw-semibold" id="validationCard"
-              placeholder="XXXXXXXXXXXXXXXX" maxlength="16" pattern="[0-9]" required>
+            <input type="tel" class="form-control text-secondary fw-semibold" id="validationCard"
+              placeholder="XXXXXXXXXXXXXXXX" maxlength="16" pattern="[0-9]" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
             <div class="invalid-tooltip">
               Please provide a correct card number.
             </div>
@@ -41,8 +41,8 @@
             <label for="validationCVC" class="form-label">
               <h6>CVC#</h6>
             </label>
-            <input type="tel" class="form-control numbersOnly text-secondary fw-semibold" id="validationCVC"
-              placeholder="0000" maxlength="4" pattern="[0-9]" required>
+            <input type="tel" class="form-control text-secondary fw-semibold" id="validationCVC"
+              placeholder="0000" maxlength="4" pattern="[0-9]" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
             <div class="invalid-tooltip">
               Please provide a correct CVC.
             </div>
@@ -56,8 +56,8 @@
             <div>
               <div class="input-group mb-3">  <!-- ESTE DIV ES PARA POSICIONAR EL AMOUNT +SIMBOLO DOLAR-->
                 <span class="p-0 m-0"><i class="fa-solid fa-dollar-sign"></i></span>
-                <input type="tel" class="form-control numbersOnly text-secondary fw-semibold" id="ValidationAmount"
-                  value="" placeholder="Amount" maxlength="9" pattern="[0-9]" required>
+                <input type="tel" class="form-control text-secondary fw-semibold" id="ValidationAmount"
+                  value="" placeholder="Amount" maxlength="9" pattern="[0-9]" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
               </div>
               <div class="invalid-tooltip">
                 Please provide a valid amount.
@@ -71,7 +71,7 @@
               <h6>First name</h6>
             </label>
             <input type="text" class="form-control" id="validationfirstname" value="" pattern="[A-Za-z]" maxlength="20"
-              required>
+              required oninput="this.value = this.value.replace(/[^A-Za-z.]/g, '').replace(/(\..*)\./g, '$1');">
             <div class="invalid-tooltip">
               Please provide a First Name.
             </div>
@@ -81,7 +81,7 @@
               <h6>Last name</h6>
             </label>
             <input type="text" class="form-control" id="validationlastname" value="" pattern="[A-Za-z]" maxlength="30"
-              required>
+              required oninput="this.value = this.value.replace(/[^A-Za-z.]/g, '').replace(/(\..*)\./g, '$1');">
           </div>
           <div class="invalid-tooltip">
             Please provide a valid Last Name.
@@ -90,7 +90,7 @@
             <label for="validationTooltip03" class="form-label">
               <h6>City</h6>
             </label>
-            <input type="text" class="form-control" id="validationTooltip03" pattern="[A-Za-z]" required>
+            <input type="text" class="form-control" id="validationTooltip03" pattern="[A-Za-z]" required  oninput="this.value = this.value.replace(/[^A-Za-z.]/g, '').replace(/(\..*)\./g, '$1');">
             <div class="invalid-tooltip">
               Please provide a valid city.
             </div>
@@ -114,8 +114,8 @@
             <label for="validationTooltip05" class="form-label">
               <h6>Postal Code</h6>
             </label>
-            <input type="tel" class="form-control numbersOnly" id="validationTooltip05" maxlength="6" pattern="[0-9]"
-              required>
+            <input type="tel" class="form-control" id="validationTooltip05" maxlength="6" pattern="[0-9]"
+              required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
             <div class="invalid-tooltip">
               Please provide a valid postal code.
             </div>
