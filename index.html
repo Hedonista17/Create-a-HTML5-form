@@ -8,7 +8,9 @@
   <title> HTML5 FORMULARIO </title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
+ <style>
+  option{color: black;}
+ </style>
 </head>
 
 <body>                   <!-- GLOBAL ES UNA CARTA, DENTRO EL RESTO DE LOS ELEMENTOS-->
@@ -97,12 +99,12 @@
             <label for="validationTooltip04" class="form-label">
               <h6>State</h6>
             </label>
-            <select class="form-select text-secondary fw-semibold" id="validationTooltip04" required>
+            <select class="form-select text-muted fw-semibold" id="validationTooltip04" required>
               <option> Pick a state</option>
-              <option> Narnia</option>
-              <option> Mordor</option>
-              <option> País de Nunca Jamás</option>
-              <option> Israel</option>
+              <option class="option"> Narnia</option>
+              <option class="option"> Mordor</option>
+              <option class="option"> País de Nunca Jamás</option>
+              <option class="option"> Israel</option>
             </select>
             <div class="invalid-tooltip">
               Please select a valid state.
